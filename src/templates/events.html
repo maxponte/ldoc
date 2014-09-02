@@ -1,0 +1,30 @@
+<div content-for="title">
+  <span>Upcoming Events</span>
+</div>
+
+<section class="section container-fluid" ng-controller="EventsCtrl as eventInfo">
+  <div class="scrollable">
+	  <div class="scrollable-content">
+	    <div class="list-group">
+	      <a ng-repeat="event in eventInfo.events" ng-href="#/events/{{event.title | slug}}" class="list-group-item">
+	        {{event.title}} <i class="fa fa-chevron-right pull-right"></i>
+	      </a>
+	    </div>
+	  </div>
+	</div>
+<!--   <div ng-repeat="event in eventInfo.events">
+  	<h1>{{event.title}}</h1>
+  	<p>{{event.time | date}}</p>
+  	<p>{{event.location}}</p>
+  	<p>{{event.description}}</p>
+  </div> -->
+
+</section>
+<div bs-panel class="form-actions">
+    <div content-for="navbarAction" duplicate>
+      <a class="btn btn-primary" ng-href="#/events/new">
+        New
+      </a>
+    </div>
+  </div>
+ </form>

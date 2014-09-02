@@ -1,0 +1,105 @@
+<div content-for="title">
+  <span>New Event</span>
+</div>
+
+<section class="section container-fluid" ng-controller="NewEventCtrl">
+	<div class="scrollable">
+	 <div class="scrollable-content section">
+	   
+	   <form action="" id="">
+
+	     <div bs-panel title="Basic Information">
+
+	       <input
+	        bs-form-control
+	        
+	        type="text" 
+	        ng-model="event.name"
+	        label="Name"
+	        label-class="col-xs-3 col-sm-2 col-lg-1" 
+	        class="col-xs-9 col-sm-10 col-lg-11"
+	        placeholder="Event Name"
+	       />
+
+	       <input
+	        bs-form-control
+	        
+	        type="text" 
+	        ng-model="event.location"
+	        label="Location"
+	        label-class="col-xs-3 col-sm-2 col-lg-1" 
+	        class="col-xs-9 col-sm-10 col-lg-11"
+	        placeholder="e.g. Duke University"
+	       />
+
+<!-- 	       <switch
+	        bs-form-control
+	        ng-change="switchChanged()"
+	        ng-model="invoice.payed"
+	        ng-click="switchClicked()"
+	        label="Payed"
+	        label-class="col-xs-3 col-sm-2 col-lg-1"
+	        class="col-xs-9 col-sm-10 col-lg-11" 
+	        >
+	        </switch> -->
+<!-- 	<div class="form-group has-success has-feedback">
+	  <label class="control-label" for="inputSuccess2">Input with success</label>
+	  <input type="text" class="form-control" id="inputSuccess2">
+	  <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+	</div> -->
+	       <input 
+	        bs-form-control
+	        
+	        type="number" 
+	        pattern="\d*" 
+	        ng-model="event.size"
+	        label="Maximum Attendence" 
+	        label-class="col-xs-3 col-sm-2 col-lg-1"
+	        class="col-xs-9 col-sm-10 col-lg-11" 
+	        
+	        />
+	       
+	       <input
+	        bs-form-control
+	        type="date" 
+	        ng-model="event.time"
+	        label="Date"
+	        label-class="col-xs-3 col-sm-2 col-lg-1"
+	        class="col-xs-9 col-sm-10 col-lg-11"
+	        
+	        />
+
+	        <select bs-form-control ng-model="event.committee" label="Committee" label-class="col-xs-3 col-sm-2 col-lg-1"
+	        class="col-xs-9 col-sm-10 col-lg-11">
+					  <option>Annual Events</option>
+					  <option>Campus Concerts</option>
+					  <option>Coffeehouse</option>
+					  <option>Duke Student Broadcasting</option>
+					  <option>Freewater Presentations</option>
+					  <option>Freewater Productions</option>
+					  <option>Innovations</option>
+					  <option>Jazz@</option>
+					  <option>LDOC</option>
+					  <option>Small Town Records</option>
+					  <option>VisArts</option>
+					  <option>WXDU</option>
+					  <option>None</option>
+					</select>
+	     </div>
+
+	     <div bs-panel title="Event Description">
+	       <textarea type="text" ng-model="event.description" label="Description" bs-form-control></textarea>
+	     </div>
+	      
+	    <div bs-panel class="form-actions">
+	      <div content-for="navbarAction" duplicate>
+	        <button class="btn btn-primary">
+	          Save
+	        </button>
+	      </div>
+	    </div>
+	   </form>
+
+	 </div>
+	</div>
+</section>

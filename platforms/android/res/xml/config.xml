@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.duke.duu" version="0.0.1" xmlns="http://www.w3.org/ns/widgets">
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="AndroidLaunchMode" value="singleTop" />
+    <feature name="App">
+        <param name="android-package" value="org.apache.cordova.App" />
+    </feature>
+    <name>Duuke</name>
+    <description>
+            yeah
+        </description>
+    <author email="dev@callback.apache.org" href="http://phonegap.com">
+            Apache Cordova Team
+        </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
